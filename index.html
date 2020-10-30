@@ -4,9 +4,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Wildfire lazy loading</title>
-	<script src="https://cdn.jsdelivr.net/npm/lazysizes/lazysizes.min.js" defer></script>
-	<script src="https://cdn.jsdelivr.net/npm/lazysizes/plugins/unveilhooks/ls.unveilhooks.min.js" defer></script>
-	<script src="KiraWildfire.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
+	<script>
+		deferscript('KiraWildfire.js', 'wildfire-init', 1000)
+		deferscript('https://cdn.jsdelivr.net/npm/wildfire/dist/wildfire.auto.js', 'wildfire', 7000)
+	</script>
 	<style>
 	body {
 		background: sienna;
@@ -27,7 +29,7 @@
 	Corrupti molestiae possimus quidem non nihil earum quaerat, accusantium vero sed fuga alias error ducimus dignissimos. Numquam consequatur fugit ipsum saepe laboriosam voluptate repellat, praesentium tenetur magni hic optio cum.
 	Amet cupiditate deserunt fugit veritatis, vitae itaque deleniti natus et hic error vero, eligendi perferendis consectetur quasi ducimus exercitationem alias molestias, magni quod ea, blanditiis. Voluptas culpa reiciendis obcaecati exercitationem.
 	Corrupti aliquid dolores cupiditate accusantium voluptatum, fugit quae beatae, illum incidunt impedit nisi? A, modi. Veritatis officia amet doloribus eius itaque numquam aspernatur adipisci ex perferendis distinctio neque incidunt, veniam?</div>
-	<div class="wildfire_thread lazyload" data-script="https://cdn.jsdelivr.net/npm/wildfire/dist/wildfire.auto.js"></div>
+	<div class="wildfire_thread"></div>
 </body>
 
 </html>
